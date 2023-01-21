@@ -1,0 +1,16 @@
+#meta-body {
+    margin: 0;
+}
+
+#meta-navbar {
+    display: flex;
+    gap: 4px;
+    padding: 5px;
+    background-color: #abcd;
+
+    align-items: center;
+}
+
+#meta-navbar > button {
+    text-align: center;
+}

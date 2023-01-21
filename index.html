@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Pandoc Example</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script>
+            const HTML_FILES = [
+                // make this the default since it looks the nicest
+                "uikit.html",
+
+                "bootstrap_menu.html",
+                "clean_menu.html",
+                "easy_template.html",
+                "elegant_bootstrap_menu.html"
+            ];
+
+            // source: https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
+            $(function() {
+                const metaNavbar = $("#meta-navbar");
+
+                for (const file of HTML_FILES) {
+                    const button = document.createElement("button");
+                    button.textContent = file.split(".")[0];
+                    button.onclick = (e) => {
+                        console.log("Clicked!");
+                        // make a button that loads that file
+                        $("#includedContent").load(`./output/${file}`);
+                    };
+
+                    metaNavbar.append(button);
+                }
+
+                // load the first one
+                $("#includedContent").load(`output/${HTML_FILES[0]}`);
+            })
+        </script>
+    </head>
+    <body id="meta-body">
+        <div id="meta-navbar"></div>
+        <div id="includedContent"></div>
+    </body>
+</html>
