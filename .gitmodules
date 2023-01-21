@@ -1,0 +1,6 @@
+[submodule "WebDocGen"]
+	path = WebDocGen
+	url = git@github.com:srithon/WebDocGen
+[submodule "easy-pandoc-templates"]
+	path = easy-pandoc-templates
+	url = git@github.com:ryangrose/easy-pandoc-templates
