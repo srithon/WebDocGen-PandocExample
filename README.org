@@ -1,0 +1,12 @@
+#+TITLE: WebDocGen Pandoc Example
+
+*See the output [[https://srithon.github.io/WebDocGen-PandocExample][here]]*.
+
+This repository is linked to [[https://github.com/srithon/WebDocGen][WebDocGen]], a tool that I wrote for generating web
+documentation.  To keep the parent repository from getting crowded with
+generated assets, I'm instead hosting it in a separate repo.  This repo contains
+a script that compiles ~example_input.md~ from the parent repository, creating
+HTML files that can be viewed through GitHub Pages. It also contains
+submodules, with commits pointing to both the parent repository as well as the
+~easy-pandoc-templates~ repository which contains the templates that I am using
+here.
